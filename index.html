@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ghanatk - الوسيط العقاري بالذكاء الاصطناعي</title>
+    <title>Ghanatk | غناتك - إعادة ابتكار الوساطة العقارية</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -31,6 +31,7 @@
               primary: "#059669", // Emerald 600 - High Contrast Green
               primaryDark: "#047857", // Emerald 700
               primaryLight: "#d1fae5", // Emerald 100
+              investor: "#0f172a", // Slate 900 for B2B/Investor vibe
             },
           },
         },
@@ -45,14 +46,14 @@
 
       /* Custom image background with overlay for Hero */
       .hero-bg {
-        background-image: url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2075&q=80");
+        background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80");
         background-size: cover;
         background-position: center;
       }
 
       /* Custom image background for CTA */
       .cta-bg {
-        background-image: url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80");
+        background-image: url("https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80");
         background-size: cover;
         background-position: center fixed;
       }
@@ -65,34 +66,32 @@
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <!-- Logo -->
-          <div class="flex-shrink-0 flex items-center">
-            <a href="#" class="text-3xl font-bold text-primary tracking-tight"
+          <!-- Logo & Beta Badge -->
+          <div class="flex-shrink-0 flex items-center gap-3">
+            <a href="#" class="text-3xl font-black text-investor tracking-tight"
               >Ghanatk</a
             >
+            <span class="bg-primaryLight text-primaryDark text-xs font-bold px-2.5 py-1 rounded-md border border-primary/20">
+              BETA
+            </span>
           </div>
 
           <!-- Desktop Menu -->
           <div class="hidden md:flex space-x-8 space-x-reverse items-center">
             <a
-              href="#why-ai"
+              href="#differentiators"
               class="text-gray-600 hover:text-primary font-semibold transition-colors"
-              >لماذا الذكاء الاصطناعي</a
+              >الميزة التنافسية</a
             >
             <a
-              href="#how-it-works"
+              href="#revenue-model"
               class="text-gray-600 hover:text-primary font-semibold transition-colors"
-              >كيف يعمل</a
+              >نموذج الإيرادات</a
             >
             <a
-              href="#pricing"
+              href="#target-audience"
               class="text-gray-600 hover:text-primary font-semibold transition-colors"
-              >الأسعار</a
-            >
-            <a
-              href="#contact"
-              class="text-gray-600 hover:text-primary font-semibold transition-colors"
-              >اتصل بنا</a
+              >للمستثمرين والشركاء</a
             >
           </div>
 
@@ -105,10 +104,10 @@
               <i data-lucide="globe" class="w-4 h-4"></i>
             </button>
             <a
-              href="#start"
-              class="bg-primary hover:bg-primaryDark text-white px-6 py-2.5 rounded-lg font-bold shadow-md shadow-primary/30 transition-all transform hover:-translate-y-0.5"
+              href="#contact"
+              class="bg-investor hover:bg-gray-800 text-white px-6 py-2.5 rounded-lg font-bold shadow-md transition-all transform hover:-translate-y-0.5"
             >
-              ابدأ الآن
+              طلب العرض التقديمي
             </a>
           </div>
 
@@ -127,370 +126,215 @@
       <!-- Overlay to ensure text contrast -->
       <div class="absolute inset-0 bg-white/90 backdrop-blur-sm"></div>
 
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span
-          class="inline-block py-1.5 px-4 rounded-full bg-primaryLight text-primaryDark font-semibold text-sm mb-6 border border-primary/20"
+          class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-investor/5 text-investor font-bold text-sm mb-6 border border-investor/10"
         >
-          وسيط عقاري مرخص ومستقل
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          الآن في المرحلة التجريبية (Beta Stage)
         </span>
         <h1
-          class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6"
+          class="text-5xl md:text-6xl lg:text-7xl font-black text-investor leading-tight mb-6"
         >
-          الوسيط العقاري المستقل <br />
-          <span class="text-primary">بالذكاء الاصطناعي</span>
+          ليس مجرد أداة، بل إعادة ابتكار <br />
+          <span class="text-primary">لنموذج الوساطة بالكامل</span>
         </h1>
         <p
-          class="mt-4 text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto font-medium"
+          class="mt-4 text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto font-medium"
         >
-          غناتك تحل محل الوسيط التقليدي. وسيط عقاري مستقل يعمل 24/7 بدون تحيز،
-          بدون عمولات مخفية، بدون أخطاء بشرية.
+          غناتك هي أول شركة وساطة عقارية مبنية هيكلياً على الذكاء الاصطناعي (AI-Native). نحن لا نبيع برمجيات للوسطاء، بل نبني نموذجاً استثمارياً يتميز بقابلية التوسع اللامحدودة وهوامش ربح استثنائية.
         </p>
-        <div class="mt-10 flex justify-center">
+        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#start"
-            class="bg-primary hover:bg-primaryDark text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/30 transition-all flex items-center gap-2 transform hover:-translate-y-1"
+            href="#contact"
+            class="bg-primary hover:bg-primaryDark text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/30 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1"
           >
-            ابدأ الآن
-            <i data-lucide="arrow-left" class="w-5 h-5"></i>
+            استثمر في غناتك
+            <i data-lucide="trending-up" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#contact"
+            class="bg-white hover:bg-gray-50 text-investor border-2 border-investor/10 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1"
+          >
+            مناقشة شراكة B2B
+            <i data-lucide="handshake" class="w-5 h-5"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Features Section (Why AI) -->
-    <section id="why-ai" class="py-20 bg-white">
+    <!-- Key Differentiators Section -->
+    <section id="differentiators" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
-            ليه الذكاء الاصطناعي أفضل من الوسيط التقليدي
+          <h2 class="text-3xl md:text-4xl font-black text-investor">
+            AI-Native Brokerage
           </h2>
-          <p class="mt-4 text-xl text-gray-500">
-            الحقائق الي تثبت تفوق الوسيط الآلي
+          <p class="mt-4 text-xl text-gray-500 font-medium">
+            لماذا يختلف نموذج غناتك جذرياً عن شركات الـ PropTech التقليدية؟
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Card 1 -->
           <div
-            class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-shadow text-center group"
+            class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow group"
           >
             <div
-              class="w-16 h-16 bg-primaryLight text-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+              class="w-16 h-16 bg-white text-primary rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
             >
-              <i data-lucide="zap" class="w-8 h-8"></i>
+              <i data-lucide="cpu" class="w-8 h-8"></i>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">السرعة</h3>
-            <ul class="space-y-4 text-right">
-              <li class="flex items-start gap-3 text-gray-500">
-                <i
-                  data-lucide="x"
-                  class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"
-                ></i>
-                <span>الوسيط التقليدي: أسابيع من البحث والتفاوض</span>
-              </li>
-              <li class="flex items-start gap-3 text-gray-900 font-semibold">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                ></i>
-                <span>غناتك: ثوانٍ من التحليل والمطابقة</span>
-              </li>
-            </ul>
+            <h3 class="text-2xl font-bold text-investor mb-4">بنية تحتية مبنية بالذكاء الاصطناعي</h3>
+            <p class="text-gray-600 leading-relaxed">
+              الذكاء الاصطناعي ليس مجرد "ميزة إضافية" (Add-on) في غناتك، بل هو النواة التشغيلية (AI-Native). النظام يدير دورة حياة الصفقة بالكامل من الاستحواذ على العميل حتى الإغلاق.
+            </p>
           </div>
 
           <!-- Card 2 -->
           <div
-            class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-shadow text-center group"
+            class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow group"
           >
             <div
-              class="w-16 h-16 bg-primaryLight text-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+              class="w-16 h-16 bg-white text-primary rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
             >
-              <i data-lucide="eye" class="w-8 h-8"></i>
+              <i data-lucide="maximize" class="w-8 h-8"></i>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">الشفافية</h3>
-            <ul class="space-y-4 text-right">
-              <li class="flex items-start gap-3 text-gray-500">
-                <i
-                  data-lucide="x"
-                  class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"
-                ></i>
-                <span>الوسيط التقليدي: عمولات مخفية وأسعار غير واضحة</span>
-              </li>
-              <li class="flex items-start gap-3 text-gray-900 font-semibold">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                ></i>
-                <span>غناتك: أسعار شفافة 100% بدون رسوم مخفية</span>
-              </li>
-            </ul>
+            <h3 class="text-2xl font-bold text-investor mb-4">قابلية توسع لامحدودة</h3>
+            <p class="text-gray-600 leading-relaxed">
+              تتطلب الوساطة التقليدية توظيف وسطاء جدد لكل نمو في الحصة السوقية. نموذج غناتك يحقق التوسع (Scalability) بتكلفة حدية (Marginal Cost) تقترب من الصفر.
+            </p>
           </div>
 
           <!-- Card 3 -->
           <div
-            class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-shadow text-center group"
+            class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow group"
           >
             <div
-              class="w-16 h-16 bg-primaryLight text-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+              class="w-16 h-16 bg-white text-primary rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
             >
-              <i data-lucide="clock" class="w-8 h-8"></i>
+              <i data-lucide="pie-chart" class="w-8 h-8"></i>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">التوفر</h3>
-            <ul class="space-y-4 text-right">
-              <li class="flex items-start gap-3 text-gray-500">
-                <i
-                  data-lucide="x"
-                  class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"
-                ></i>
-                <span>الوسيط التقليدي: ساعات عمل محدودة</span>
-              </li>
-              <li class="flex items-start gap-3 text-gray-900 font-semibold">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                ></i>
-                <span>غناتك: متاح 24/7 بدون انقطاع</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Card 5 -->
-          <div
-            class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl transition-shadow text-center group"
-          >
-            <div
-              class="w-16 h-16 bg-primaryLight text-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
-            >
-              <i data-lucide="circle-dollar-sign" class="w-8 h-8"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">التكلفة</h3>
-            <ul class="space-y-4 text-right">
-              <li class="flex items-start gap-3 text-gray-500">
-                <i
-                  data-lucide="x"
-                  class="w-5 h-5 text-red-500 flex-shrink-0 mt-1"
-                ></i>
-                <span>الوسيط التقليدي: عمولة 2-5% من سعر العقار</span>
-              </li>
-              <li class="flex items-start gap-3 text-gray-900 font-semibold">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-primary flex-shrink-0 mt-1"
-                ></i>
-                <span>غناتك: رسوم ثابتة منخفضة بدون نسبة مئوية</span>
-              </li>
-            </ul>
+            <h3 class="text-2xl font-bold text-investor mb-4">هوامش ربح استثنائية</h3>
+            <p class="text-gray-600 leading-relaxed">
+              من خلال إلغاء الاعتماد على العنصر البشري في عمليات المطابقة والتفاوض، نعيد هيكلة قائمة الدخل لتقديم هوامش ربحية تتفوق على أي شركة وساطة عقارية تقليدية.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section
-      id="how-it-works"
-      class="py-20 bg-gray-50 border-t border-gray-200"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Revenue Model Section -->
+    <section id="revenue-model" class="py-20 bg-investor text-white relative overflow-hidden">
+      <!-- Decorative background elements -->
+      <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-primary/10 blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-primary/10 blur-3xl"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
-            كيف يعمل غناتك
+          <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Business Model</span>
+          <h2 class="text-3xl md:text-4xl font-black mb-4">
+            نموذج إيرادات ذكي ومستدام
           </h2>
-          <p class="mt-4 text-xl text-gray-500">عملية بسيطة وشفافة بالكامل</p>
-        </div>
-
-        <div class="relative">
-          <!-- Connecting Line for Desktop -->
-          <div
-            class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2 z-0"
-          ></div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 relative z-10">
-            <!-- Step 1 -->
-            <div
-              class="bg-white rounded-xl p-6 text-center shadow-md border border-gray-100 relative"
-            >
-              <div
-                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg shadow-primary/30"
-              >
-                1
-              </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">
-                أخبرنا بما تبحث عنه
-              </h4>
-              <p class="text-sm text-gray-500">
-                حدد الميزانية والموقع والمواصفات المطلوبة
-              </p>
-            </div>
-
-            <!-- Step 3 -->
-            <div
-              class="bg-white rounded-xl p-6 text-center shadow-md border border-gray-100 relative"
-            >
-              <div
-                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg shadow-primary/30"
-              >
-                2
-              </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">ربط دقيق</h4>
-              <p class="text-sm text-gray-500">
-                نعرض لك أفضل الخيارات المطابقة لمعاييرك
-              </p>
-            </div>
-
-            <!-- Step 4 -->
-            <div
-              class="bg-white rounded-xl p-6 text-center shadow-md border border-gray-100 relative"
-            >
-              <div
-                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg shadow-primary/30"
-              >
-                3
-              </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">تفاوض آلي</h4>
-              <p class="text-sm text-gray-500">
-                الذكاء الاصطناعي يفاوض للحصول على أفضل سعر
-              </p>
-            </div>
-
-            <!-- Step 5 -->
-            <div
-              class="bg-white rounded-xl p-6 text-center shadow-md border border-gray-100 relative"
-            >
-              <div
-                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg shadow-primary/30"
-              >
-                4
-              </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">إتمام فوري</h4>
-              <p class="text-sm text-gray-500">
-                عقود إلكترونية وإجراءات سلسة بالكامل
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trust Section -->
-    <section class="bg-primaryDark py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
-          غناتك: وسيط عقاري حقيقي
-        </h2>
-        <p class="text-primaryLight text-lg md:text-xl mb-12">
-          نحن لسنا تطبيق أو منصة - نحن وسيط عقاري مرخص مستقل
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="flex flex-col items-center">
-            <div
-              class="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center mb-4"
-            >
-              <i data-lucide="check" class="w-8 h-8 text-white"></i>
-            </div>
-            <h4 class="text-white font-bold text-lg">
-              مرخص من قبل السلطات المختصة
-            </h4>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div
-              class="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center mb-4"
-            >
-              <i data-lucide="check" class="w-8 h-8 text-white"></i>
-            </div>
-            <h4 class="text-white font-bold text-lg">
-              شفافية كاملة في جميع المعاملات
-            </h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-white">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
-            أسعار شفافة بدون مفاجآت
-          </h2>
-          <p class="mt-4 text-xl text-gray-500">
-            رسوم ثابتة منخفضة - لا توجد عمولات مخفية
+          <p class="mt-4 text-xl text-gray-400">
+            صمم نموذج عمل غناتك لتعظيم القيمة السوقية وتنويع مصادر الدخل
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <!-- Buyer Card -->
-          <div
-            class="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow"
-          >
-            <h3
-              class="text-3xl font-bold text-center text-gray-900 mb-8 pb-6 border-b border-gray-100"
-            >
-              للمشتري
+          <!-- Revenue Stream 1 -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 lg:p-10 backdrop-blur-sm">
+            <div class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+              <i data-lucide="percent" class="w-7 h-7 text-primaryLight"></i>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">
+              نسبة العمولة
+              <span class="block text-lg text-primary font-medium mt-2">Commission %</span>
             </h3>
-            <ul class="space-y-6">
-              <li class="flex items-center gap-4 text-lg">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-6 h-6 text-primary flex-shrink-0"
-                ></i>
-                <span class="text-gray-700 font-semibold">رسم ثابت</span>
+            <p class="text-gray-300 leading-relaxed text-lg mb-6">
+              تحقيق إيرادات مباشرة كنسبة مئوية من قيمة الصفقات العقارية المنفذة. بفضل الأتمتة الكاملة، نحقق حجماً هائلاً من الصفقات بتكاليف تشغيلية شبه معدومة.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-gray-400">
+                <i data-lucide="check" class="w-5 h-5 text-primary"></i> تدفق نقدي مستقر
               </li>
-              <li class="flex items-center gap-4 text-lg">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-6 h-6 text-primary flex-shrink-0"
-                ></i>
-                <span class="text-gray-700 font-semibold">بدون رسوم مخفية</span>
-              </li>
-              <li class="flex items-center gap-4 text-lg">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-6 h-6 text-primary flex-shrink-0"
-                ></i>
-                <span class="text-gray-500"
-                  >مقابل 2-5% عند الوسيط التقليدي</span
-                >
+              <li class="flex items-center gap-3 text-gray-400">
+                <i data-lucide="check" class="w-5 h-5 text-primary"></i> قابل للتطبيق على المشترين والبائعين
               </li>
             </ul>
           </div>
 
-          <!-- Seller Card (Highlighted) -->
-          <div
-            class="bg-primaryLight/40 border border-primary/20 rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden"
-          >
-            <div class="absolute top-0 right-0 w-full h-2 bg-primary"></div>
-            <h3
-              class="text-3xl font-bold text-center text-gray-900 mb-8 pb-6 border-b border-primary/10"
-            >
-              للبائع
+          <!-- Revenue Stream 2 -->
+          <div class="bg-gradient-to-br from-primaryDark/40 to-investor border border-primary/30 rounded-2xl p-8 lg:p-10 backdrop-blur-sm relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-full h-1 bg-primary"></div>
+            <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mb-6 shadow-lg shadow-primary/30">
+              <i data-lucide="arrow-left-right" class="w-7 h-7 text-white"></i>
+            </div>
+            <h3 class="text-3xl font-bold mb-4">
+              فارق البيع والشراء
+              <span class="block text-lg text-primaryLight font-medium mt-2">Buy/Sell Spread</span>
             </h3>
-            <ul class="space-y-6">
-              <li class="flex items-center gap-4 text-lg">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-6 h-6 text-primary flex-shrink-0"
-                ></i>
-                <span class="text-gray-800 font-semibold">رسم ثابت</span>
+            <p class="text-gray-300 leading-relaxed text-lg mb-6">
+              استغلال قدرات الذكاء الاصطناعي في تحليل البيانات اللحظية وصناعة السوق (Market Making)، مما يتيح تحقيق أرباح إضافية من فروقات الأسعار بين العرض والطلب.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-white font-medium">
+                <i data-lucide="check" class="w-5 h-5 text-primaryLight"></i> هوامش ربحية مضاعفة
               </li>
-              <li class="flex items-center gap-4 text-lg">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-6 h-6 text-primary flex-shrink-0"
-                ></i>
-                <span class="text-gray-800 font-semibold">بدون رسوم مخفية</span>
-              </li>
-              <li class="flex items-center gap-4 text-lg">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-6 h-6 text-primary flex-shrink-0"
-                ></i>
-                <span class="text-gray-600"
-                  >مقابل 2-5% عند الوسيط التقليدي</span
-                >
+              <li class="flex items-center gap-3 text-white font-medium">
+                <i data-lucide="check" class="w-5 h-5 text-primaryLight"></i> تعزيز سيولة السوق العقاري
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience (B2B & Investors) -->
+    <section id="target-audience" class="py-20 bg-gray-50 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-black text-investor">
+            فرص الشراكة والاستثمار
+          </h2>
+          <p class="mt-4 text-xl text-gray-500 font-medium">الجمهور المستهدف والمستفيد من تقنيات غناتك</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+            <div class="p-4 bg-blue-50 text-blue-600 rounded-full mb-6">
+              <i data-lucide="landmark" class="w-10 h-10"></i>
+            </div>
+            <h4 class="text-xl font-bold text-investor mb-3">
+              صناديق الاستثمار (VCs)
+            </h4>
+            <p class="text-gray-600">
+              نبحث عن شركاء استراتيجيين للمرحلة التجريبية والجولات الاستثمارية القادمة لدعم التوسع في البنية التحتية والاستحواذ على الحصة السوقية.
+            </p>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+            <div class="p-4 bg-primaryLight text-primaryDark rounded-full mb-6">
+              <i data-lucide="building-2" class="w-10 h-10"></i>
+            </div>
+            <h4 class="text-xl font-bold text-investor mb-3">
+              المطورون العقاريون (B2B)
+            </h4>
+            <p class="text-gray-600">
+              ربط مباشر لمخزون العقارات (Inventory) مع محرك الذكاء الاصطناعي لغناتك لتسريع وتيرة المبيعات وتقليل تكلفة الاستحواذ على العميل (CAC).
+            </p>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+            <div class="p-4 bg-purple-50 text-purple-600 rounded-full mb-6">
+              <i data-lucide="network" class="w-10 h-10"></i>
+            </div>
+            <h4 class="text-xl font-bold text-investor mb-3">
+              الصناديق العقارية (REITs)
+            </h4>
+            <p class="text-gray-600">
+              بيانات تحليلية عميقة وتنفيذ صفقات استثمارية ضخمة بسرعة فائقة وبدون تسريب للمعلومات، مع تحسين عوائد الاستحواذ والتخارج.
+            </p>
           </div>
         </div>
       </div>
@@ -498,116 +342,100 @@
 
     <!-- Call to Action -->
     <section class="relative py-24 cta-bg">
-      <div class="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-investor/90 mix-blend-multiply"></div>
       <div class="relative max-w-4xl mx-auto px-4 text-center z-10">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
-          جاهز للتعامل مع وسيط عقاري حقيقي؟
+        <span class="inline-block py-1 px-3 rounded text-primary font-bold bg-primary/20 mb-4 border border-primary/30 uppercase tracking-widest text-sm">Beta Access</span>
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+          كن جزءاً من مستقبل الوساطة العقارية
         </h2>
-        <p class="text-xl text-primaryLight mb-10">
-          غناتك متاح الآن. ابدأ بحثك عن العقار المثالي بدون وسيط تقليدي.
+        <p class="text-xl text-gray-300 mb-10 leading-relaxed">
+          نحن في مرحلة الإطلاق التجريبي (Beta). نرحب بالتواصل مع صناديق رأس المال الجريء، والمكاتب العائلية، والشركاء الاستراتيجيين لمناقشة فرص النمو.
         </p>
         <a
-          href="#start"
-          class="inline-flex items-center gap-2 bg-white text-primaryDark px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-gray-50 transition-colors transform hover:-translate-y-1"
+          href="#contact"
+          class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-primaryDark transition-all transform hover:-translate-y-1"
         >
-          ابدأ البحث الآن
-          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+          اطلب العرض التقديمي (Pitch Deck)
+          <i data-lucide="file-text" class="w-5 h-5"></i>
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#1a1a1a] pt-16 pb-8 border-t border-gray-800">
+    <footer id="contact" class="bg-[#0f172a] pt-16 pb-8 border-t border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
         >
           <!-- Brand Info -->
           <div class="lg:col-span-1">
-            <a
-              href="#"
-              class="text-3xl font-bold text-white mb-4 block tracking-tight"
-              >Ghanatk</a
-            >
+            <div class="flex items-center gap-2 mb-4">
+              <a href="#" class="text-3xl font-black text-white tracking-tight">Ghanatk</a>
+              <span class="bg-white/10 text-white text-[10px] font-bold px-2 py-0.5 rounded border border-white/20">BETA</span>
+            </div>
             <p class="text-gray-400 leading-relaxed text-sm">
-              غناتك هي وسيط عقاري مرخص ومستقل يستخدم الذكاء الاصطناعي لتقديم
-              خدمات أفضل وأسرع وأرخص من الوسطاء التقليديين.
+              غناتك تعيد ابتكار نموذج الوساطة العقارية من خلال بنية تحتية تعتمد كلياً على الذكاء الاصطناعي (AI-Native Brokerage). نموذج أعمال قابل للتوسع بهوامش ربح غير مسبوقة.
             </p>
           </div>
 
-          <!-- Services -->
-          <div>
-            <h4 class="text-white font-bold text-lg mb-6">الخدمات</h4>
-            <ul class="space-y-4">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >شراء عقار</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >بيع عقار</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >الاستثمار العقاري</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Company -->
+          <!-- Links -->
           <div>
             <h4 class="text-white font-bold text-lg mb-6">الشركة</h4>
             <ul class="space-y-4">
               <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >من نحن</a
-                >
+                <a href="#differentiators" class="text-gray-400 hover:text-white transition-colors">الميزة التنافسية</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >الوظائف</a
-                >
+                <a href="#revenue-model" class="text-gray-400 hover:text-white transition-colors">نموذج الإيرادات</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition-colors"
-                  >الإعلام</a
-                >
+                <a href="#target-audience" class="text-gray-400 hover:text-white transition-colors">علاقات المستثمرين</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h4 class="text-white font-bold text-lg mb-6">قانوني</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">شروط الاستخدام</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">سياسة الخصوصية</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">التراخيص العقارية</a>
               </li>
             </ul>
           </div>
 
           <!-- Contact -->
-          <div id="contact">
-            <h4 class="text-white font-bold text-lg mb-6">التواصل</h4>
+          <div>
+            <h4 class="text-white font-bold text-lg mb-6">التواصل (للمستثمرين)</h4>
             <ul class="space-y-4 text-left" dir="ltr">
               <li>
                 <a
-                  href="mailto:info@ghanatk.com"
+                  href="mailto:invest@ghanatk.com"
                   class="text-gray-400 hover:text-white transition-colors flex items-center gap-3 justify-end"
                 >
-                  info@ghanatk.com
+                  invest@ghanatk.com
                   <i data-lucide="mail" class="w-4 h-4 text-primary"></i>
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+966501398793"
+                  href="mailto:partners@ghanatk.com"
                   class="text-gray-400 hover:text-white transition-colors flex items-center gap-3 justify-end"
+                >
+                  partners@ghanatk.com
+                  <i data-lucide="handshake" class="w-4 h-4 text-primary"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+966501398793"
+                  class="text-gray-400 hover:text-white transition-colors flex items-center gap-3 justify-end mt-4 pt-4 border-t border-gray-800"
                 >
                   +966 50 139 8793
                   <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
@@ -622,7 +450,7 @@
           class="border-t border-gray-800 pt-8 text-center flex flex-col items-center justify-center gap-2"
         >
           <p class="text-gray-500 text-sm">
-            &copy; 2026 غناتك. جميع الحقوق محفوظة. وسيط عقاري مرخص.
+            &copy; 2026 غناتك - AI-Native Brokerage. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>
